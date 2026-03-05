@@ -1,99 +1,228 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grevy Karuretwa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation Menu -->
-    <nav>
-        <div class="profile-container">
-            <img src="images/profile.jpeg.jpg" alt="Profile Picture" class="profile-pic">
-            <h1>Grevy Karuretwa</h1>
-        </div>
-        <ul class="menu" id="menu">
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#languages">Languages</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#hobbies">Hobbies</a></li>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">GK</div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#languages" class="nav-link">Languages</a></li>
+            <li><a href="#publications" class="nav-link">Achievements</a></li>
+            <li><a href="#hobbies" class="nav-link">Hobbies</a></li>
         </ul>
-        <button id="theme-toggle" class="theme-toggle">Theme</button>
+        <button class="theme-btn" id="theme-toggle" aria-label="Toggle theme">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
     </nav>
-    
+
+    <section class="hero" id="about">
+        <div class="hero-inner">
+            <div class="avatar-wrap">
+                <img src="images/profile.jpeg.jpg" alt="Grevy Karuretwa" class="avatar">
+            </div>
+            <div class="hero-text">
+                <h1>Grevy Karuretwa</h1>
+                <p class="hero-tagline">Software Engineering Student &nbsp;&middot;&nbsp; Project Manager &nbsp;&middot;&nbsp; Creative</p>
+                <p class="hero-bio">Passionate about technology and people. Currently pursuing a Bachelor of Software Engineering at African Leadership University, with hands-on experience in project management for major international cycling events.</p>
+            </div>
+        </div>
+    </section>
+
     <main>
-        <section id="education">
-            <h2>Education</h2>
-            <p><strong>Nursery:</strong> <em>Mother Mary School</em></p>
-            <p><strong>Primary:</strong> <em>Saint Ignatius Primary School</em></p>
-            <p><strong>High School O-level:</strong> <em>Saint Ignatius High School</em></p>
-            <p><strong>High School A-level:</strong> <em>Kigali Christian School</em></p>
-            <p><strong>Bachelor of Software Engineering in Computer Science:</strong> <em>African Leadership University, May 2024 - Present</em></p>
+
+        <section id="experience" class="section reveal">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">02 / 2026</span>
+                        <h3>Project Management Assistant &mdash; Tour du Rwanda</h3>
+                        <p class="org">Planet Events</p>
+                        <p>Supported planning and execution of event activities, ensuring alignment with project objectives and tight deadlines. Monitored progress and provided real-time updates to the Head PM, identifying and mitigating risks during the event.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">09 / 2025</span>
+                        <h3>Project Management Assistant &mdash; UCI</h3>
+                        <p class="org">SP Joint Ventures &nbsp;&middot;&nbsp; Union Cycliste Internationale</p>
+                        <p>Supported planning and execution of event activities, ensuring alignment with project objectives and tight deadlines. Monitored progress and provided real-time updates to the Head PM, identifying and mitigating risks during the event.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">02 / 2025</span>
+                        <h3>Project Management Officer &mdash; Tour du Rwanda</h3>
+                        <p class="org">Rwanda Cycling Federation (FERWACY)</p>
+                        <p>Supported planning and execution of event activities, ensuring alignment with project objectives and tight deadlines. Monitored progress and provided real-time updates to the Head PM, identifying and mitigating risks during the event.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">11 / 2023</span>
+                        <h3>Quality Assurance &mdash; Data Health Check</h3>
+                        <p class="org">MTN Rwanda</p>
+                        <p>Performed comprehensive data health checks to ensure network integrity, security, and efficiency.</p>
+                    </div>
+                </div>
+            </div>
         </section>
-        
-        <section id="experience">
-            <h2>Experience</h2>
-            <div class="experience-item">
-                <h3>Quality Assurance</h3>
-                <p><strong>(MTN Rwanda) Data Health Check (11/2023)</strong></p>
-                <p>Performed comprehensive data health checks to ensure network integrity, security, and efficiency.</p>
-		 <p><strong>Project Management Officer – Tour du Rwanda</strong></p>
-		 <em>Rwanda Cycling Federation (FERWACY) – [02/2025]</em>
-		 <p>Supported planning and execution of event activities, ensuring alignment with project objectives and tight deadlines.</p>
-		 <p>Monitored progress and provided real-time updates to the Head PM, identifying and mitigating risks during the event.</p>
-            </di>
+
+        <section id="education" class="section reveal">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">May 2024 &ndash; Present</span>
+                        <h3>Bachelor of Software Engineering in Computer Science</h3>
+                        <p class="org">African Leadership University</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>High School &mdash; A-Level</h3>
+                        <p class="org">Kigali Christian School</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>High School &mdash; O-Level</h3>
+                        <p class="org">Saint Ignatius High School</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Primary School</h3>
+                        <p class="org">Saint Ignatius Primary School</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Nursery</h3>
+                        <p class="org">Mother Mary School</p>
+                    </div>
+                </div>
+            </div>
         </section>
-        
-        <section id="hobbies">
-            <h2>Hobbies</h2>
-            <ul>
-                <li>Travelling</li>
-                <li>Basketball</li>
-                <li>Football</li>
-                <li>Swimming</li>
-                <li>Playing Golf</li>
-            </ul>
+
+        <section id="skills" class="section reveal">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">HTML &amp; CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React Native</span>
+                <span class="skill-tag">Flutter</span>
+                <span class="skill-tag">Figma</span>
+                <span class="skill-tag">FL Studio</span>
+                <span class="skill-tag">Photoshop</span>
+                <span class="skill-tag">Driving</span>
+                <span class="skill-tag">Time Management</span>
+                <span class="skill-tag">Critical Thinking</span>
+                <span class="skill-tag">Problem Solving</span>
+                <span class="skill-tag">Multitasking</span>
+                <span class="skill-tag">Project Management</span>
+            </div>
         </section>
-        
-        <section id="languages">
-            <h2>Languages</h2>
-            <ul>
-                <li><strong><em>English (Fluent)</em></strong></li>
-                <li><strong><em>French (Fluent)</em></strong></li>
-                <li><strong><em>Kinyarwanda (Fluent)</em></strong></li>
-            </ul>
+
+        <section id="languages" class="section reveal">
+            <h2 class="section-title">Languages</h2>
+            <div class="lang-list">
+                <div class="lang-item">
+                    <div class="lang-info">
+                        <span class="lang-name">Kinyarwanda</span>
+                        <span class="lang-level">Native</span>
+                    </div>
+                    <div class="lang-bar"><div class="lang-fill" data-width="100%"></div></div>
+                </div>
+                <div class="lang-item">
+                    <div class="lang-info">
+                        <span class="lang-name">English</span>
+                        <span class="lang-level">Fluent</span>
+                    </div>
+                    <div class="lang-bar"><div class="lang-fill" data-width="95%"></div></div>
+                </div>
+                <div class="lang-item">
+                    <div class="lang-info">
+                        <span class="lang-name">French</span>
+                        <span class="lang-level">Fluent</span>
+                    </div>
+                    <div class="lang-bar"><div class="lang-fill" data-width="90%"></div></div>
+                </div>
+            </div>
         </section>
-        
-        <section id="publications">
-            <h2>Publications</h2>
-            <p><strong>2019 Kigali Christian School</strong> - Certificate of Recognition</p>
-            <p><strong>2021-2022 Kigali Christian School</strong> - Certificate of Appreciation</p>
-            <p><strong>2022-2023 Excella School</strong> - Certificate of Graduation</p>
+
+        <section id="publications" class="section reveal">
+            <h2 class="section-title">Achievements</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">&#127942;</div>
+                    <div>
+                        <p class="card-title">Certificate of Graduation</p>
+                        <p class="card-sub">Kigali Christian School &middot; 2022&ndash;2023</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">&#127941;</div>
+                    <div>
+                        <p class="card-title">Certificate of Appreciation</p>
+                        <p class="card-sub">Kigali Christian School &middot; 2021&ndash;2022</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">&#11088;</div>
+                    <div>
+                        <p class="card-title">Certificate of Recognition</p>
+                        <p class="card-sub">Kigali Christian School &middot; 2019</p>
+                    </div>
+                </div>
+            </div>
         </section>
-        
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>FL Studio</li>
-                <li>Photoshop</li>
-                <li>Driving Skills</li>
-                <li>Python</li>
-                <li>Data Analysis & Reporting</li>
-                <li>HTML & CSS</li>
-                <li>Time Management & Multitasking</li>
-                <li>Critical Thinking & Problem-Solving</li>
-            </ul>
+
+        <section id="hobbies" class="section reveal">
+            <h2 class="section-title">Hobbies</h2>
+            <div class="hobbies-grid">
+                <div class="hobby-item">&#9992;&#65039;<span>Travelling</span></div>
+                <div class="hobby-item">&#127936;<span>Basketball</span></div>
+                <div class="hobby-item">&#9917;<span>Football</span></div>
+                <div class="hobby-item">&#127946;<span>Swimming</span></div>
+                <div class="hobby-item">&#9971;<span>Golf</span></div>
+            </div>
         </section>
+
     </main>
-    
+
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">&#8679;</button>
+
     <footer>
-        <p>&copy; 2025 Grevy Karuretwa</p>
+        <p>&copy; 2026 Grevy Karuretwa</p>
     </footer>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
-
